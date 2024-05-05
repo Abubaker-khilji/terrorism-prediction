@@ -1,0 +1,17 @@
+streamlit
+pandas
+numpy
+streamlit_folium
+folium
+datetime
+plotly
+pandas  
+numpy 
+sklearn.preprocessing 
+lightgbm
+tabulate
+scikit-learn==0.24.2
+matplotlib
+seaborn 
+shap
+streamlit-authenticator
