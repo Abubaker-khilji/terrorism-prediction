@@ -1,20 +1,27 @@
-Terrorism Prediction - Final Year Project
-Overview
-This project aims to predict the likelihood of terrorism-related events being suicide terrorist attacks. Using machine learning models such as LightGBM, this project analyzes historical terrorism data to identify patterns and predict future events. The project uses a combination of classification and time series analysis techniques to provide insights into terrorism trends across the globe.
+# 🚀 Terrorism Prediction - Final Year Project
 
-Table of Contents
-Project Structure
-Installation
-Usage
-Model
-Data
-Future Improvements
-Contributing
-License
-Project Structure
-csharp
-Copy
-Edit
+## 📌 Overview
+
+This project aims to predict the likelihood of terrorism-related events being suicide terrorist attacks. Using machine learning models such as **LightGBM**, it analyzes historical terrorism data to identify patterns and predict future events. The project integrates **classification** and **time series analysis** techniques to provide insights into global terrorism trends.
+
+---
+
+## 📖 Table of Contents
+
+- [📁 Project Structure](#-project-structure)
+- [🛠 Installation](#-installation)
+- [🚀 Usage](#-usage)
+- [🧠 Model](#-model)
+- [📊 Data](#-data)
+- [📈 Future Improvements](#-future-improvements)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+
+---
+
+## 📁 Project Structure
+
+```
 ├── README.md
 ├── global-terrorism.csv
 ├── globalterrorismdb_0522dist.csv
@@ -36,93 +43,140 @@ Edit
 ├── requirements.txt
 ├── logo.jpeg
 └── dataset-cover.jpeg
-Installation
-Clone this repository to your local machine:
+```
 
-bash
-Copy
-Edit
+---
+
+## 🛠 Installation
+
+### 🔹 Clone the Repository
+
+```bash
 git clone https://github.com/yourusername/terrorism-prediction.git
-Navigate to the project folder and create a virtual environment:
-
-bash
-Copy
-Edit
 cd terrorism-prediction
+```
+
+### 🔹 Create a Virtual Environment
+
+```bash
 python3 -m venv venv
-Activate the virtual environment:
+```
 
-For Windows:
+### 🔹 Activate the Virtual Environment
 
-Copy
-Edit
+**For Windows:**
+
+```bash
 venv\Scripts\activate
-For macOS/Linux:
+```
 
-bash
-Copy
-Edit
+**For macOS/Linux:**
+
+```bash
 source venv/bin/activate
-Install the required dependencies:
+```
 
-Copy
-Edit
+### 🔹 Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Usage
-Start the Streamlit App:
+```
 
-Run the following command to start the app in your local environment:
+---
 
-arduino
-Copy
-Edit
+## 🚀 Usage
+
+### 🔹 Start the Streamlit App
+
+```bash
 streamlit run gtc.py
-Interact with the App:
+```
 
-Once the Streamlit app is running, you will be able to:
+### 🔹 Features
 
-Filter terrorism-related events by various criteria (e.g., date, country, region, category).
-View maps with markers for incidents.
-Analyze the frequency and distribution of attacks using interactive pie charts.
-Download the filtered data in CSV format.
-View time series graphs for the number of deaths and injuries over time.
-Model
-The primary machine learning model used in this project is LightGBM, a gradient boosting framework that efficiently handles large datasets. The model predicts the probability of an event being a suicide terrorist attack.
+- **Filter** terrorism-related events by **date, country, region, and attack category**.
+- **Interactive Map** with markers representing incidents.
+- **Download Filtered Data** in CSV format.
+- **View Time Series Graphs** for attack frequency, deaths, and injuries.
 
-Model Training
-The model was trained using historical terrorism data, and it uses features like:
+---
 
-Casualties (deaths and injuries)
-Country and region
-Attack category
-Perpetrator group
-The model is saved as a .pkl file (best_lightgbm_model.pkl), which is loaded and used for prediction in the app.
+## 🧠 Model
 
-Model Evaluation
-Accuracy: 96% (based on the Area Under the Curve (AUC) metric)
-Specificity: 86.5% (accurately classifying non-suicide attacks)
-Data
-The project uses several datasets related to global terrorism incidents. These datasets are cleaned and preprocessed to ensure that they are suitable for machine learning analysis.
+### 🔹 Primary Model: **LightGBM**
 
-globalterrorismdb_0522dist.csv: Original dataset containing global terrorism data.
-gtd_clean_v2.csv: A cleaned version of the dataset.
-gtd_clean.csv: Another cleaned version with a different data processing approach.
-global-terrorism.csv: The final dataset used in the Streamlit app for interactive analysis.
-Future Improvements
-While this project provides a foundational prediction model and analysis tool, there are several areas for improvement and extension:
+- A gradient boosting framework that efficiently handles large datasets.
+- Predicts whether an event is a **suicide terrorist attack**.
 
-Model Refinement: Experiment with other models like XGBoost, Random Forest, or Neural Networks for better accuracy.
-Additional Features: Incorporate more granular features, such as the exact type of weapon used in attacks or economic conditions.
-Real-time Data Integration: Incorporate a mechanism to update predictions with live data.
-Web Deployment: Deploy the Streamlit app on a public web server (e.g., Heroku, AWS, or Streamlit Sharing).
-Contributing
-We welcome contributions to this project! If you would like to contribute, please fork the repository and submit a pull request with your changes.
+### 🔹 Model Training
 
-Steps to Contribute:
-Fork this repository.
-Create a new branch: git checkout -b feature-name
-Commit your changes: git commit -am 'Add new feature'
-Push to the branch: git push origin feature-name
-Create a new Pull Request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+The model is trained using historical terrorism data with features such as:
+
+- **Casualties (deaths and injuries)**
+- **Country and region**
+- **Attack category**
+- **Perpetrator group**
+
+### 🔹 Model Performance
+
+- **Accuracy**: **96%**
+- **Specificity**: **86.5%** (correctly classifies non-suicide attacks)
+
+---
+
+## 📊 Data
+
+### 🔹 Datasets Used
+
+| Dataset                          | Description                                        |
+| -------------------------------- | -------------------------------------------------- |
+| `globalterrorismdb_0522dist.csv` | Original dataset with global terrorism incidents.  |
+| `gtd_clean_v2.csv`               | Preprocessed and cleaned version of the dataset.   |
+| `gtd_clean.csv`                  | Another cleaned version with a different approach. |
+| `global-terrorism.csv`           | Final dataset used in the Streamlit app.           |
+
+---
+
+## 📈 Future Improvements
+
+🚀 **Potential Enhancements:**
+
+- 🔹 **Model Refinement:** Experiment with **XGBoost**, **Random Forest**, or **Neural Networks**.
+- 🔹 **Additional Features:** Incorporate detailed features such as **weapon type and economic conditions**.
+- 🔹 **Real-time Data Integration:** Connect the model to **live data sources** for up-to-date predictions.
+- 🔹 **Web Deployment:** Deploy on **Heroku, AWS, or Streamlit Cloud**.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to improve this project! 🚀
+
+### 🔹 Steps to Contribute:
+
+1. **Fork** this repository.
+2. **Create a new branch:**
+   ```bash
+   git checkout -b feature-name
+   ```
+3. **Commit your changes:**
+   ```bash
+   git commit -am 'Add new feature'
+   ```
+4. **Push to the branch:**
+   ```bash
+   git push origin feature-name
+   ```
+5. **Create a Pull Request!** 🎉
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+---
+
+🔗 **Project Maintainer:** Your Name\
+📧 **Contact:** [your.email@example.com](mailto\:your.email@example.com)
+
