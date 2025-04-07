@@ -119,7 +119,7 @@ The model is trained using historical terrorism data with features such as:
 
 ### 🔹 Model Performance
 
-- **Accuracy**: **96%**
+- **Accuracy**: **83%**
 - **Specificity**: **86.5%** (correctly classifies non-suicide attacks)
 
 ---
@@ -177,6 +177,6 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 ---
 
-🔗 **Project Maintainer:** Your Name\
-📧 **Contact:** [your.email@example.com](mailto\:your.email@example.com)
+🔗 **Project Maintainer:** Abu-Bakar khilji
+📧 **Contact:** [armaan1900@outlook.com](mailto\:your.email@example.com)
 
